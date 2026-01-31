@@ -1,0 +1,14 @@
+@use 'variables';
+
+.container {
+    margin: 0 auto;
+    width: 95%;
+}
+
+body {
+    font-family: variables.$primary-ff;
+}
+
+html {
+    font-size: 100%;
+}
