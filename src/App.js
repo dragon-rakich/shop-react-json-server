@@ -1,9 +1,14 @@
+import Header from './Components/Header/Header';
+import Logo from './Components/Header/Logo/Logo';
+import Cart from './Components/Header/Cart/Cart';
 
 export function App() {
   return (
     <>
-      <h1>Parcel React App</h1>
-      <p>Edit <code>src/App.tsx</code> to get started!</p>
+      <Header>
+        <Logo brandname="TechStore" />
+        <Cart />
+      </Header>
     </>
   );
 }
