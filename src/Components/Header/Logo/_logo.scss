@@ -1,0 +1,14 @@
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    .logo__image {
+        width: 20px;
+    }
+
+    .logo__brandname {
+        font-size: 1.125em;
+        font-weight: 700;
+        line-height: 1.55em;
+    }
+}
