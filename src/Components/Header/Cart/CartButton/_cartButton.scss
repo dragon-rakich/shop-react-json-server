@@ -1,0 +1,14 @@
+@use '../../../../styles/variables';
+
+.cartButton {
+    width: 2.625em;
+    height: 2.25em;
+    border: 1px solid variables.$black-100;
+    border-radius: 8px;
+
+    background-color: variables.$white;
+    background-image: url("../../../../assets/icons/basket.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1em;
+}
