@@ -1,0 +1,12 @@
+@use '../../../styles/variables';
+.copyright {
+    padding-block: 2em;
+    .copyright__text {
+        font-size: 0.75em;
+        font-weight: 400;
+        color: variables.$grey-500;
+
+        line-height: 1.66em;
+        text-align: center;
+    }
+}
