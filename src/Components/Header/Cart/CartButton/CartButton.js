@@ -1,4 +1,4 @@
-import './_cartButton.scss';
+import './_cart-button.scss';
 
 function CartButton(onClick) {
 
@@ -7,7 +7,7 @@ function CartButton(onClick) {
             onClick();
         }
     }
-    return <button onClick={handleClick} className="cartButton" />
+    return <button onClick={handleClick} className="cart-button" />
 }
 
 export default CartButton;
