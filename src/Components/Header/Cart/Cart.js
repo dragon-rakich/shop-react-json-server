@@ -9,7 +9,7 @@ function Cart() {
     return (
         <div className='cart'>
             <CartButton />
-            <CartCount count={32} />
+            {(cart && cart.length > 0) && <CartCount count={32} />}
         </div>
     )
 }
