@@ -11,7 +11,7 @@ function Cart() {
         <div className='cart'>
             <CartButton />
             {(cart && cart.length > 0) && <CartCount count={32} />}
-            <CartOverlay />
+            {(cart && cart.length > 0) && <CartOverlay />}
         </div>
     )
 }
