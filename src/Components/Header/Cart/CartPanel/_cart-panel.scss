@@ -1,0 +1,43 @@
+@use '../../../../styles/variables';
+
+.cart-panel {
+    position: fixed;
+
+    width:100vw;
+    height: 100vh;
+
+    top: 0;
+    left: 50vw;
+
+    background-color: variables.$white;
+
+    border-left: 1px solid variables.$black-100;
+
+    padding: 1em;
+
+    .cart-panel__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 3.5em;
+
+        .cart-panel__title {
+            font-size: 1.125em;
+            font-weight: 600;
+            line-height: 1.66em;
+        }
+
+        .cart-panel__x {
+            font-size: 1em;
+            font-weight: 400;
+        }
+    }
+
+    .cart-panel__empty {
+        margin-top: 5em;
+        color: variables.$grey-500;
+        text-align: center;
+    }
+
+}
