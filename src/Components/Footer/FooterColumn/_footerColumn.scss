@@ -1,0 +1,23 @@
+@use '../../../styles/variables';
+
+.footerColumn {
+    .footerColumn__title {
+        font-size: 1em;
+        line-height: 1.6875em;
+        font-weight: 600;
+        margin-bottom: 0.75em;
+    }
+
+    .footerColumn__items {
+        display: flex;
+        flex-direction: column;
+        gap: 8px
+    }
+
+    .footerColumn__item {
+        font-size: 0.8125em;
+        line-height: 1.5384615384615385em;
+        font-weight: 400;
+        color: variables.$grey-500;
+    }
+}
