@@ -1,4 +1,3 @@
-import Cart from '../Cart';
 import './_cart-count.scss';
 
 function CartCount({count}) {

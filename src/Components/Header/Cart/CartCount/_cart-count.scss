@@ -1,3 +1,19 @@
-.cart-count {
+@use '../../../../styles/variables';
 
+.cart-count {
+    font-size: 0.6875em;
+    background-color: variables.$black-800;
+    color: variables.$white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 35%;
+    width: 1.9em;
+    height: 1.9em;
+
+    position: absolute;
+    top: -0.7em;
+    right: -0.7em;
 }
