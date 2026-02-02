@@ -1,11 +1,15 @@
 import './_cart.scss';
+import { useState, useEffect } from 'react'; 
 
 import CartButton from './CartButton/CartButton';
+import CartCount from './CartCount/CartCount';
 
 function Cart() {
+    const [cart, setCart] = useState(false);
     return (
         <div className='cart'>
             <CartButton />
+            <CartCount count={32} />
         </div>
     )
 }
