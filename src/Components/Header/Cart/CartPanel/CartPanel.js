@@ -3,11 +3,13 @@ import './_cart-panel.scss';
 
 import CartItem from './CartItem/CartItem';
 
-function CartPanel({cart, onHide, onIncrease, onDecrease, onRemove}) {
+function CartPanel({cart, isShowing, onHide, onUpdate}) {
     const total = cart.reduce((sum, cartItem) => sum + (Number(cartItem.price) * Number(cartItem.count)), 0);
 
+    let className = "cart-panel";
+    if (isShowing) {className += " open"}
     return (
-        <div className='cart-panel'>
+        <div className={className}>
             <header className='cart-panel__header'>
                 <h2 className='cart-panel__title'>Shopping Cart</h2>
                 <button className='cart-panel__x' onClick={onHide}>x</button>
@@ -22,9 +24,9 @@ function CartPanel({cart, onHide, onIncrease, onDecrease, onRemove}) {
                             return (<li key={i}>
                                 <CartItem 
                                     cartItem={cartItem}
-                                    onDecrease={() => {onDecrease(cartItem)}}
-                                    onIncrease={() => {onIncrease(cartItem)}}
-                                    onRemove={() => {onRemove(cartItem)}}
+                                    onDecrease={() => {onUpdate(cartItem, "decrease")}}
+                                    onIncrease={() => {onUpdate(cartItem, "increase")}}
+                                    onRemove={() => {onUpdate(cartItem, "delete")}}
                                 />
                             </li>)
                         })}
