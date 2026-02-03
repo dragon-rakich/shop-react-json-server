@@ -7,13 +7,18 @@ import CartOverlay from './CartOverlay/CartOverlay';
 import CartPanel from './CartPanel/CartPanel';
 
 function Cart() {
-    const [cart, setCart] = useState(false);
+    const [cart, setCart] = useState([]);
+    const [isShowing, setIsShowing] = useState(false);
+
+    const toggleCart = (e) => {
+        setIsShowing(prev => !prev);
+    }
     return (
         <div className='cart'>
-            <CartButton />
-            {(cart && cart.length > 0) && <CartCount count={32} />}
-            {(cart && cart.length > 0) && <CartOverlay />}
-            <CartPanel cart={[]} />
+            <CartButton onClick={toggleCart} />
+            {(cart && cart.length > 0) && <CartCount cart={cart} />}
+            {(isShowing) && <CartOverlay onClick={toggleCart} />}
+            <CartPanel cart={cart} />
         </div>
     )
 }
