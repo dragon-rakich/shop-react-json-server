@@ -1,0 +1,20 @@
+@use '../../../styles/variables';
+.store-heading {
+    padding-block: 1.5em;
+
+    .store-heading__main {
+        font-size: 1.375em;
+        font-weight: 700;
+        line-height: 1.45em;
+
+        margin-bottom: 0.25em;
+    }
+
+    .store-heading__sub {
+        font-size: 0.8125em;
+        font-weight: 400;
+        line-height: 1.53em;
+
+        color: variables.$grey-500;
+    }
+}
