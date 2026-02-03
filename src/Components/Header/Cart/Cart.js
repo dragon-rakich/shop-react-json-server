@@ -38,10 +38,11 @@ function Cart() {
                 const data = await response.json();
                 console.log("New data:", data);
                 setCart(data);
+                console.log("cart set");
                 timeoutId = setTimeout(poll, 1000);
             } catch (err) {
                 console.log("Polling error", err);
-                //timeoutId = setTimeout(poll, 3000);
+                timeoutId = setTimeout(poll, 3000);
             }
         }
 
