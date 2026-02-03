@@ -1,0 +1,9 @@
+{
+  "products": [
+  ],
+  "cart": [
+    {"id": 1,"title": "Monitor", "price": 298.99, "count": 2}, 
+    {"id": 2, "title": "Headphones", "price": 70.99, "count": 3}, 
+    {"id": 3, "title": "Mouse", "price": 26.99, "count": 1}
+  ]
+}
