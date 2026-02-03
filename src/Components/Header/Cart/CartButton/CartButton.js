@@ -1,6 +1,6 @@
 import './_cart-button.scss';
 
-function CartButton(onClick) {
+function CartButton({onClick}) {
 
     const handleClick = (e) => {
         if (typeof(onClick) === "function") {
