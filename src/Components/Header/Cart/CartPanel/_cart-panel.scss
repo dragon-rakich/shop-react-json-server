@@ -2,18 +2,21 @@
 
 .cart-panel {
     position: fixed;
+    z-index: 2;
 
     width:100vw;
     height: 100vh;
 
     top: 0;
-    left: 0vw;
+    left: 110vw;
 
     background-color: variables.$white;
 
     border: 1px solid variables.$black-100;
 
     padding: 1em;
+
+    transition: left 0.45s ease 0.15s;
 
     .cart-panel__header {
         display: flex;
@@ -53,4 +56,8 @@
         text-align: center;
     }
 
+}
+
+.open {
+    left: 0;
 }
