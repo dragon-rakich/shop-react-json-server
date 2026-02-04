@@ -2,6 +2,7 @@ import './_store.scss';
 import {useState, useEffect} from 'react';
 
 import StoreHeading from './StoreHeading/StoreHeading';
+import Product from './Product/Product';
 
 function Store() {
     const [products, setProducts] = useState(false);
