@@ -12,7 +12,7 @@ function Product({product}, onBuy) {
                     <div className='product__rating-star' />
                     <p className='product__rating-num'>{product.rating}</p>
                 </div>
-                <p>${product.price}</p>
+                <p className='product__price'>${product.price}</p>
                 <button onClick={onBuy}>Add to Cart</button>
             </div>
         </article>
