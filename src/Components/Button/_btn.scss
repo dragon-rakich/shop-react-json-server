@@ -1,0 +1,30 @@
+@use '../../styles/variables';
+
+.btn {
+    font-size: 0.875em;
+    font-weight: 500;
+    line-height: 1.42em;
+    padding-block: 0.42em;
+    border-radius: 8px;
+}
+
+.btn--primary {
+    border: 1px solid variables.$black-100;
+}
+
+.btn--secondary {
+    color: variables.$white;
+    background-color: variables.$black-800;
+}
+
+.btn--disabled {
+    color: variables.$grey-500;
+}
+
+.btn--medium {
+    padding-inline: 1em;
+}
+
+.btn--large {
+    width: 100%;
+}
