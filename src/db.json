@@ -165,7 +165,112 @@
       "price": 329.99,
       "isPopular": true,
       "isOutOfStock": false
+    },
+      {
+      "id": "16",
+      "name": "Canon EOS R9 Mark II",
+      "description": "Professional hybrid camera",
+      "brand": "Canon",
+      "category": "Cameras",
+      "rating": 4.8,
+      "price": 2499.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "17",
+      "name": "Corsair Dark Core RGB Pro",
+      "description": "Wireless gaming mouse with Qi charging",
+      "brand": "Corsair",
+      "category": "Mice",
+      "rating": 4.5,
+      "price": 89.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "18",
+      "name": "Corsair K70 RGB",
+      "description": "Mechanical gaming keyboard",
+      "brand": "Corsair",
+      "category": "Keyboards",
+      "rating": 4.5,
+      "price": 169.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "19",
+      "name": "Das Keyboard 4 Professional",
+      "description": "Premium mechanical keyboard",
+      "brand": "Das Keyboard",
+      "category": "Keyboards",
+      "rating": 4.8,
+      "price": 169.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "20",
+      "name": "Dell UltraSharp U2723DE",
+      "description": "27-inch QHD USB-C monitor",
+      "brand": "Dell",
+      "category": "Monitors",
+      "rating": 4.6,
+      "price": 549.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "21",
+      "name": "Dell XPS 15",
+      "description": "InfinityEdge display, Intel i7",
+      "brand": "Dell",
+      "category": "Laptops",
+      "rating": 4.7,
+      "price": 1799.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "22",
+      "name": "Fitbit Sense 2",
+      "description": "Advanced health smartwatch",
+      "brand": "FitBit",
+      "category": "Smartwatches",
+      "rating": 4.5,
+      "price": 249.99,
+      "isPopular": false,
+      "isOutOfStock": true
+    },
+    {
+      "id": "23",
+      "name": "Fossil Gen 6 ",
+      "description": "Wear OS powered smartwatch",
+      "brand": "Fossil",
+      "category": "Smartwatches",
+      "rating": 4.3,
+      "price": 299.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "24",
+      "name": "Fujifilm X-T5",
+      "description": "Retro-styled APS-C camera",
+      "brand": "Fujifilm",
+      "category": "Cameras",
+      "rating": 4.8,
+      "price": 1699.99,
+      "isPopular": true,
+      "isOutOfStock": false
     }
+
+
+
+
+
+
 
 
 
