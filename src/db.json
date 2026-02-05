@@ -72,7 +72,7 @@
       "name": "Apple Magic Mouse",
       "description": "Multi-touch wireless mouse",
       "brand": "Apple",
-      "category": "Mouse",
+      "category": "Mice",
       "rating": 4.2,
       "price": 79.99,
       "isPopular": false,
@@ -125,7 +125,7 @@
       {
       "id": "12",
       "name": "Beats Studio Pro",
-      "description": "Powerfull noice-cancelling headphones",
+      "description": "Powerful noise-cancelling headphones",
       "brand": "Beats",
       "category": "Headphones",
       "rating": 4.5,
@@ -135,7 +135,7 @@
     },
       {
       "id": "13",
-      "name": "BenQ PD27OOU",
+      "name": "BenQ PD2700U",
       "description": "4K designer monitor",
       "brand": "BenQ",
       "category": "Monitors",
@@ -236,7 +236,7 @@
       "id": "22",
       "name": "Fitbit Sense 2",
       "description": "Advanced health smartwatch",
-      "brand": "FitBit",
+      "brand": "Fitbit",
       "category": "Smartwatches",
       "rating": 4.5,
       "price": 249.99,
@@ -245,7 +245,7 @@
     },
     {
       "id": "23",
-      "name": "Fossil Gen 6 ",
+      "name": "Fossil Gen 6",
       "description": "Wear OS powered smartwatch",
       "brand": "Fossil",
       "category": "Smartwatches",
@@ -264,16 +264,403 @@
       "price": 1699.99,
       "isPopular": true,
       "isOutOfStock": false
+    },
+    {
+      "id": "25",
+      "name": "Garmin Forerunner 965",
+      "description": "Premium GPS running watch",
+      "brand": "Garmin",
+      "category": "Smartwatches",
+      "rating": 4.9,
+      "price": 599.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "26",
+      "name": "GoPro Hero 12 Black",
+      "description": "Waterproof action camera",
+      "brand": "GoPro",
+      "category": "Cameras",
+      "rating": 4.6,
+      "price": 399.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+      {
+      "id": "27",
+      "name": "HP E24 G5",
+      "description": "24-inch FHD business monitor",
+      "brand": "HP",
+      "category": "Monitors",
+      "rating": 4.3,
+      "price": 199.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "28",
+      "name": "HP Spectre x360",
+      "description": "2-in-1 convertible laptop",
+      "brand": "HP",
+      "category": "Laptops",
+      "rating": 4.6,
+      "price": 1499.99,
+      "isPopular": false,
+      "isOutOfStock": true
+    },
+    {
+      "id": "29",
+      "name": "iPad Air",
+      "description": "Powerful and versatile tablet",
+      "brand": "Apple",
+      "category": "Tablets",
+      "rating": 4.8,
+      "price": 599.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "30",
+      "name": "JBL Charge 5",
+      "description": "Portable waterproof speaker",
+      "brand": "JBL",
+      "category": "Speakers",
+      "rating": 4.7,
+      "price": 179.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "31",
+      "name": "JBL Live 660NC",
+      "description": "Adaptive noise-cancelling headphones",
+      "brand": "JBL",
+      "category": "Headphones",
+      "rating": 4.4,
+      "price": 129.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "32",
+      "name": "Keychron K8 Pro",
+      "description": "Hot-swappable mechanical keyboard",
+      "brand": "Keychron",
+      "category": "Keyboards",
+      "rating": 4.6,
+      "price": 109.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "33",
+      "name": "Lenovo ThinkPad X1 Carbon",
+      "description": "Business ultrabook with security features",
+      "brand": "Lenovo",
+      "category": "Laptops",
+      "rating": 4.8,
+      "price": 1699.99,
+      "isPopular": false,
+      "isOutOfStock": true
+    },
+    {
+      "id": "34",
+      "name": "LG UltraGear 27",
+      "description": "1440p 144Hz gaming monitor",
+      "brand": "LG",
+      "category": "Monitors",
+      "rating": 4.7,
+      "price": 399.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "35",
+      "name": "Logitech C920 HD Pro",
+      "description": "Full HD webcam for streaming",
+      "brand": "Logitech",
+      "category": "Webcams",
+      "rating": 4.6,
+      "price": 79.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "36",
+      "name": "Logitech G502 HERO",
+      "description": "High-performance gaming mouse",
+      "brand": "Logitech",
+      "category": "Mice",
+      "rating": 4.7,
+      "price": 79.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "37",
+      "name": "Logitech MX Keys",
+      "description": "Advanced wireless illuminated keyboard",
+      "brand": "Logitech",
+      "category": "Keyboards",
+      "rating": 4.7,
+      "price": 119.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "38",
+      "name": "Logitech MX Master 3S",
+      "description": "Wireless performance mouse",
+      "brand": "Logitech",
+      "category": "Mice",
+      "rating": 4.8,
+      "price": 99.99,
+      "isPopular": false,
+      "isOutOfStock": true
+    },
+    {
+      "id": "39",
+      "name": "MacBook Pro 14",
+      "description": "M3 Pro chip with 18GB RAM",
+      "brand": "Apple",
+      "category": "Laptops",
+      "rating": 4.9,
+      "price": 1999.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "40",
+      "name": "Microsoft Ergonomic Keyboard",
+      "description": "Split ergonomic design",
+      "brand": "Microsoft",
+      "category": "Keyboards",
+      "rating": 4.3,
+      "price": 59.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "41",
+      "name": "Microsoft Pro IntelliMouse",
+      "description": "Classic design with modern sensor",
+      "brand": "Microsoft",
+      "category": "Mice",
+      "rating": 4.5,
+      "price": 59.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "42",
+      "name": "Microsoft Surface Laptop 5",
+      "description": "Sleek design with touchscreen",
+      "brand": "Microsoft",
+      "category": "Laptops",
+      "rating": 4.5,
+      "price": 1299.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "43",
+      "name": "Nikon Z6 III",
+      "description": "Full-frame mirrorless camera",
+      "brand": "Nikon",
+      "category": "Cameras",
+      "rating": 4.7,
+      "price": 2299.99,
+      "isPopular": false,
+      "isOutOfStock": true
+    },
+    {
+      "id": "44",
+      "name": "Panasonic Lumix S5 II",
+      "description": "Full-frame camera",
+      "brand": "Panasonic",
+      "category": "Cameras",
+      "rating": 4.7,
+      "price": 1999.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "45",
+      "name": "Razer Barracuda X",
+      "description": "Multi-platform wireless gaming headset",
+      "brand": "Razer",
+      "category": "Headphones",
+      "rating": 4.3,
+      "price": 99.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "46",
+      "name": "Razer BlackWidow V3",
+      "description": "Mechanical keyboard with green switches",
+      "brand": "Razer",
+      "category": "Keyboards",
+      "rating": 4.4,
+      "price": 139.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "47",
+      "name": "Razer Blade 15",
+      "description": "Premium gaming laptop with RTX 4070",
+      "brand": "Razer",
+      "category": "Laptops",
+      "rating": 4.6,
+      "price": 2499.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+      {
+      "id": "48",
+      "name": "Razer DeathAdder V3 Pro",
+      "description": "Wireless gaming mouse",
+      "brand": "Razer",
+      "category": "Mice",
+      "rating": 4.7,
+      "price": 149.99,
+      "isPopular": false,
+      "isOutOfStock": true
+    },
+    {
+      "id": "49",
+      "name": "Samsung Galaxy Tab S9",
+      "description": "Premium Android tablet",
+      "brand": "Samsung",
+      "category": "Tablets",
+      "rating": 4.7,
+      "price": 799.99,
+      "isPopular": false,
+      "isOutOfStock": true
+    },
+    {
+      "id": "50",
+      "name": "Samsung Galaxy Watch 6",
+      "description": "Comprehensive wellness features",
+      "brand": "Samsung",
+      "category": "Smartwatches",
+      "rating": 4.6,
+      "price": 299.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "51",
+      "name": "Samsung Odyssey G7",
+      "description": "Curved 32-inch QLED gaming monitor",
+      "brand": "Samsung",
+      "category": "Monitors",
+      "rating": 4.8,
+      "price": 599.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "52",
+      "name": "Samsung T7 Portable SSD 2TB",
+      "description": "Fast and durable portable storage",
+      "brand": "Samsung",
+      "category": "Storage",
+      "rating": 4.8,
+      "price": 199.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "53",
+      "name": "Sennheiser HD 660S2",
+      "description": "Audiophile-grade over-ear headphones",
+      "brand": "Sennheiser",
+      "category": "Headphones",
+      "rating": 4.9,
+      "price": 499.99,
+      "isPopular": false,
+      "isOutOfStock": true
+    },
+    {
+      "id": "54",
+      "name": "Sonos Era 100",
+      "description": "Smart speaker with rich sound",
+      "brand": "Sonos",
+      "category": "Speakers",
+      "rating": 4.6,
+      "price": 249.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "55",
+      "name": "Sony A7 IV",
+      "description": "Full-frame mirrorless camera",
+      "brand": "Sony",
+      "category": "Cameras",
+      "rating": 4.9,
+      "price": 2499.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "56",
+      "name": "Sony WF-1000XM5",
+      "description": "Premium noise-cancelling earbuds",
+      "brand": "Sony",
+      "category": "Earbuds",
+      "rating": 4.7,
+      "price": 299.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "57",
+      "name": "Sony WH-1000XM5",
+      "description": "Noise-cancelling headphones",
+      "brand": "Sony",
+      "category": "Headphones",
+      "rating": 4.8,
+      "price": 399.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "58",
+      "name": "SteelSeries Apex Pro",
+      "description": "Adjustable mechanical gaming keyboard",
+      "brand": "SteelSeries",
+      "category": "Keyboards",
+      "rating": 4.7,
+      "price": 199.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "59",
+      "name": "SteelSeries Rival 3",
+      "description": "Budget gaming mouse",
+      "brand": "SteelSeries",
+      "category": "Mice",
+      "rating": 4.4,
+      "price": 29.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "60",
+      "name": "TP-LINK Archer AX6000",
+      "description": "Next-gen WiFi 6 router",
+      "brand": "TP-Link",
+      "category": "Routers",
+      "rating": 4.5,
+      "price": 299.99,
+      "isPopular": false,
+      "isOutOfStock": false
     }
-
-
-
-
-
-
-
-
-
   ],
   "cart": [
     {
