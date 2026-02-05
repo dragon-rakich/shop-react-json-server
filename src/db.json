@@ -1,5 +1,175 @@
 {
-  "products": [],
+  "products": [
+    {
+      "id": "1",
+      "name": "Acer Predator X34",
+      "description": "Ultrawide curved gaming monitor",
+      "brand": "Acer",
+      "category": "Monitors",
+      "rating": 4.8,
+      "price": 899.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "2",
+      "name": "Acer Swift 3",
+      "description": "Thin and light everyday laptop",
+      "brand": "Acer",
+      "category": "Laptops",
+      "rating": 4.4,
+      "price": 699.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "3",
+      "name": "Amazfit GTR 4",
+      "description": "Long battery life smartwatch",
+      "brand": "Amazfit",
+      "category": "Smartwatches",
+      "rating": 4.4,
+      "price": 199.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "4",
+      "name": "Apple AirPods Max",
+      "description": "High-fidelity audio experience",
+      "brand": "Apple",
+      "category": "Headphones",
+      "rating": 4.6,
+      "price": 549.99,
+      "isPopular": false,
+      "isOutOfStock": false
+
+    },
+    {
+      "id": "5",
+      "name": "Apple AirPods Pro 2",
+      "description": "Active noise cancellation earbuds",
+      "brand": "Apple",
+      "category": "Earbuds",
+      "rating": 4.8,
+      "price": 249.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "6",
+      "name": "Apple Magic Keyboard",
+      "description": "Wireless rechargeable keyboard",
+      "brand": "Apple",
+      "category": "Keyboards",
+      "rating": 4.6,
+      "price": 99.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "7",
+      "name": "Apple Magic Mouse",
+      "description": "Multi-touch wireless mouse",
+      "brand": "Apple",
+      "category": "Mouse",
+      "rating": 4.2,
+      "price": 79.99,
+      "isPopular": false,
+      "isOutOfStock": true
+    },
+    {
+      "id": "8",
+      "name": "Apple Watch Series 9",
+      "description": "Advanced health and fitness tracking",
+      "brand": "Apple",
+      "category": "Smartwatches",
+      "rating": 4.8,
+      "price": 399.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+    {
+      "id": "9",
+      "name": "ASUS ProArt PA278QV",
+      "description": "Professional color-accurate monitor",
+      "brand": "ASUS",
+      "category": "Monitors",
+      "rating": 4.7,
+      "price": 349.99,
+      "isPopular": false,
+      "isOutOfStock": true
+    },
+    {
+      "id": "10",
+      "name": "ASUS ROG Zephyrus G14",
+      "description": "Gaming laptop with AMD Ryzen 9",
+      "brand": "ASUS",
+      "category": "Laptops",
+      "rating": 4.7,
+      "price": 1649.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+    {
+      "id": "11",
+      "name": "Audio-Technica ATH-M50x",
+      "description": "Professional monitor headphones",
+      "brand": "Audio-Technica",
+      "category": "Headphones",
+      "rating": 4.7,
+      "price": 169.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+      {
+      "id": "12",
+      "name": "Beats Studio Pro",
+      "description": "Powerfull noice-cancelling headphones",
+      "brand": "Beats",
+      "category": "Headphones",
+      "rating": 4.5,
+      "price": 349.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+      {
+      "id": "13",
+      "name": "BenQ PD27OOU",
+      "description": "4K designer monitor",
+      "brand": "BenQ",
+      "category": "Monitors",
+      "rating": 4.5,
+      "price": 449.99,
+      "isPopular": false,
+      "isOutOfStock": false
+    },
+      {
+      "id": "14",
+      "name": "Blue Yeti USB Microphone",
+      "description": "Professional USB condenser mic",
+      "brand": "Blue",
+      "category": "Microphones",
+      "rating": 4.7,
+      "price": 129.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    },
+      {
+      "id": "15",
+      "name": "Bose QuietComfort 45",
+      "description": "Premium headphones",
+      "brand": "Bose",
+      "category": "Headphones",
+      "rating": 4.7,
+      "price": 329.99,
+      "isPopular": true,
+      "isOutOfStock": false
+    }
+
+
+
+  ],
   "cart": [
     {
       "id": "2",
