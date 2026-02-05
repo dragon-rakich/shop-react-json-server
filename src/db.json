@@ -5,13 +5,13 @@
       "id": "2",
       "title": "Headphones",
       "price": 70.99,
-      "count": 11
+      "count": 12
     },
     {
       "id": "3",
       "title": "Mouse",
       "price": 26.99,
-      "count": 9
+      "count": 12
     }
   ]
 }
