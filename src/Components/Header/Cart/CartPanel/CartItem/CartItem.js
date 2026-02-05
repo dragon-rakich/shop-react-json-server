@@ -1,5 +1,7 @@
 import './_cart-item.scss';
 
+import Button from '../../../../Button/Button';
+
 function CartItem({cartItem, onDecrease, onIncrease, onRemove}) {
     return (
         <article className='cart-item'>
@@ -9,9 +11,19 @@ function CartItem({cartItem, onDecrease, onIncrease, onRemove}) {
                     <h2 className='cart-item__title'>{cartItem.title}</h2>
                     <p className='cart-item__price'>${cartItem.price}</p>
                     <div className='cart-item__counter'>
-                        <button onClick={onDecrease}>-</button>
+                        <Button
+                            onClick={onDecrease}
+                            label="-"
+                            type="primary"
+                            size="medium"
+                         />
                         <p className='cart-item__count'>{cartItem.count}</p>
-                        <button onClick={onIncrease}>+</button>
+                        <Button
+                            onClick={onIncrease}
+                            label="+"
+                            type="primary"
+                            size="medium"
+                         />
                     </div>
                 </div>
             </div>
@@ -19,5 +31,6 @@ function CartItem({cartItem, onDecrease, onIncrease, onRemove}) {
         </article>
     )
 }
+
 
 export default CartItem;
