@@ -1,5 +1,7 @@
 import './_product.scss';
 
+import Button from '../../Button/Button';
+
 function Product({product}, onBuy) {
     return (
         <article className='product'>
@@ -13,7 +15,12 @@ function Product({product}, onBuy) {
                     <p className='product__rating-num'>{product.rating}</p>
                 </div>
                 <p className='product__price'>${product.price}</p>
-                <button onClick={onBuy}>Add to Cart</button>
+                <Button
+                    label="Add to Cart"
+                    type="secondary"
+                    size="large"
+                    onClick={onBuy}
+                />            
             </div>
         </article>
     )
