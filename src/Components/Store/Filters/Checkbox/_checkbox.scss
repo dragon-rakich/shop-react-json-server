@@ -1,6 +1,9 @@
 @use '../../../../styles/variables';
 
 .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
     .checkbox__native {
         display: none;
