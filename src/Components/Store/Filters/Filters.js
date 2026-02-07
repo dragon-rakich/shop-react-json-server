@@ -29,7 +29,7 @@ function Filters({filters, onFilterChange, onClear, filterResults}) {
                 }
             }
             else if (key === "inStockOnly") {
-                newFilter.fun = function(isInStock) {(value) ? isInStock:true}
+                newFilter.fun = function(isInStock) {return (value) ? isInStock:true}
             }
 
         }
