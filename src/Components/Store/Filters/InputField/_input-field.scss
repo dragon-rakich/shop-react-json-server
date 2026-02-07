@@ -1,0 +1,20 @@
+@use '../../../../styles/variables';
+
+.input-field {
+    font-size: 0.875em;
+    line-height: 1.42em;
+
+    padding-inline: 2.25em;
+    padding-block: 0.57em;
+    background-color: variables.$grey-100;
+
+    background-image: url('../../../../assets/icons/arrow-down.png');
+    background-repeat: no-repeat;
+    background-position: 5% center;
+
+    border-radius: 8px;
+
+    &::placeholder {
+        color: variables.$grey-500;
+    }
+}
