@@ -1,0 +1,51 @@
+@use '../../../styles/variables';
+
+.filters {
+    padding-block: 1em;
+    padding-inline: 1.25em;
+    border: 1px solid variables.$black-100;
+    border-radius: 10px;
+
+    .filters__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .filters__heading {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .filters__icon {
+                width: 20px;
+                height: 20px;
+            }
+
+            .filters__title {
+                font-size: 1em;
+                font-weight: 600;
+                line-height: 1.75em;
+            }
+        }
+
+        .filters__results {
+            font-size: 0.8125em;
+            font-weight: 400;
+            line-height: 1.53em;
+            color: variables.$grey-500;
+        }
+    }
+
+    .filters__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+
+        margin-bottom: 1em;
+    }
+
+    .filters__last-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
