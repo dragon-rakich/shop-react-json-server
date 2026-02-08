@@ -9,7 +9,7 @@
       "rating": 4.8,
       "price": 899.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "2",
@@ -20,7 +20,7 @@
       "rating": 4.4,
       "price": 699.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "3",
@@ -31,7 +31,7 @@
       "rating": 4.4,
       "price": 199.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "4",
@@ -42,8 +42,7 @@
       "rating": 4.6,
       "price": 549.99,
       "isPopular": false,
-      "isOutOfStock": false
-
+      "isInStock": true
     },
     {
       "id": "5",
@@ -54,7 +53,7 @@
       "rating": 4.8,
       "price": 249.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "6",
@@ -65,7 +64,7 @@
       "rating": 4.6,
       "price": 99.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "7",
@@ -76,7 +75,7 @@
       "rating": 4.2,
       "price": 79.99,
       "isPopular": false,
-      "isOutOfStock": true
+      "isInStock": false
     },
     {
       "id": "8",
@@ -87,7 +86,7 @@
       "rating": 4.8,
       "price": 399.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "9",
@@ -98,7 +97,7 @@
       "rating": 4.7,
       "price": 349.99,
       "isPopular": false,
-      "isOutOfStock": true
+      "isInStock": false
     },
     {
       "id": "10",
@@ -109,7 +108,7 @@
       "rating": 4.7,
       "price": 1649.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "11",
@@ -120,9 +119,9 @@
       "rating": 4.7,
       "price": 169.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
-      {
+    {
       "id": "12",
       "name": "Beats Studio Pro",
       "description": "Powerful noise-cancelling headphones",
@@ -131,9 +130,9 @@
       "rating": 4.5,
       "price": 349.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
-      {
+    {
       "id": "13",
       "name": "BenQ PD2700U",
       "description": "4K designer monitor",
@@ -142,9 +141,9 @@
       "rating": 4.5,
       "price": 449.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
-      {
+    {
       "id": "14",
       "name": "Blue Yeti USB Microphone",
       "description": "Professional USB condenser mic",
@@ -153,9 +152,9 @@
       "rating": 4.7,
       "price": 129.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
-      {
+    {
       "id": "15",
       "name": "Bose QuietComfort 45",
       "description": "Premium headphones",
@@ -164,9 +163,9 @@
       "rating": 4.7,
       "price": 329.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
-      {
+    {
       "id": "16",
       "name": "Canon EOS R9 Mark II",
       "description": "Professional hybrid camera",
@@ -175,7 +174,7 @@
       "rating": 4.8,
       "price": 2499.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "17",
@@ -186,7 +185,7 @@
       "rating": 4.5,
       "price": 89.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "18",
@@ -197,7 +196,7 @@
       "rating": 4.5,
       "price": 169.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "19",
@@ -208,7 +207,7 @@
       "rating": 4.8,
       "price": 169.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "20",
@@ -219,8 +218,9 @@
       "rating": 4.6,
       "price": 549.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
+
     {
       "id": "21",
       "name": "Dell XPS 15",
@@ -230,7 +230,7 @@
       "rating": 4.7,
       "price": 1799.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "22",
@@ -241,7 +241,7 @@
       "rating": 4.5,
       "price": 249.99,
       "isPopular": false,
-      "isOutOfStock": true
+      "isInStock": false
     },
     {
       "id": "23",
@@ -252,7 +252,7 @@
       "rating": 4.3,
       "price": 299.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "24",
@@ -263,7 +263,7 @@
       "rating": 4.8,
       "price": 1699.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "25",
@@ -274,7 +274,7 @@
       "rating": 4.9,
       "price": 599.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "26",
@@ -285,9 +285,9 @@
       "rating": 4.6,
       "price": 399.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
-      {
+    {
       "id": "27",
       "name": "HP E24 G5",
       "description": "24-inch FHD business monitor",
@@ -296,7 +296,7 @@
       "rating": 4.3,
       "price": 199.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "28",
@@ -307,7 +307,7 @@
       "rating": 4.6,
       "price": 1499.99,
       "isPopular": false,
-      "isOutOfStock": true
+      "isInStock": false
     },
     {
       "id": "29",
@@ -318,7 +318,7 @@
       "rating": 4.8,
       "price": 599.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "30",
@@ -329,7 +329,7 @@
       "rating": 4.7,
       "price": 179.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "31",
@@ -340,7 +340,7 @@
       "rating": 4.4,
       "price": 129.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "32",
@@ -351,7 +351,7 @@
       "rating": 4.6,
       "price": 109.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "33",
@@ -362,7 +362,7 @@
       "rating": 4.8,
       "price": 1699.99,
       "isPopular": false,
-      "isOutOfStock": true
+      "isInStock": false
     },
     {
       "id": "34",
@@ -373,7 +373,7 @@
       "rating": 4.7,
       "price": 399.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "35",
@@ -384,7 +384,7 @@
       "rating": 4.6,
       "price": 79.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "36",
@@ -395,7 +395,7 @@
       "rating": 4.7,
       "price": 79.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "37",
@@ -406,7 +406,7 @@
       "rating": 4.7,
       "price": 119.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "38",
@@ -417,7 +417,7 @@
       "rating": 4.8,
       "price": 99.99,
       "isPopular": false,
-      "isOutOfStock": true
+      "isInStock": false
     },
     {
       "id": "39",
@@ -428,7 +428,7 @@
       "rating": 4.9,
       "price": 1999.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "40",
@@ -439,7 +439,7 @@
       "rating": 4.3,
       "price": 59.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "41",
@@ -450,7 +450,7 @@
       "rating": 4.5,
       "price": 59.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "42",
@@ -461,7 +461,7 @@
       "rating": 4.5,
       "price": 1299.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "43",
@@ -472,7 +472,7 @@
       "rating": 4.7,
       "price": 2299.99,
       "isPopular": false,
-      "isOutOfStock": true
+      "isInStock": false
     },
     {
       "id": "44",
@@ -483,7 +483,7 @@
       "rating": 4.7,
       "price": 1999.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "45",
@@ -494,7 +494,7 @@
       "rating": 4.3,
       "price": 99.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "46",
@@ -505,7 +505,7 @@
       "rating": 4.4,
       "price": 139.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "47",
@@ -516,9 +516,9 @@
       "rating": 4.6,
       "price": 2499.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
-      {
+    {
       "id": "48",
       "name": "Razer DeathAdder V3 Pro",
       "description": "Wireless gaming mouse",
@@ -527,7 +527,7 @@
       "rating": 4.7,
       "price": 149.99,
       "isPopular": false,
-      "isOutOfStock": true
+      "isInStock": false
     },
     {
       "id": "49",
@@ -538,7 +538,7 @@
       "rating": 4.7,
       "price": 799.99,
       "isPopular": false,
-      "isOutOfStock": true
+      "isInStock": false
     },
     {
       "id": "50",
@@ -549,7 +549,7 @@
       "rating": 4.6,
       "price": 299.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "51",
@@ -560,7 +560,7 @@
       "rating": 4.8,
       "price": 599.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "52",
@@ -571,7 +571,7 @@
       "rating": 4.8,
       "price": 199.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "53",
@@ -582,7 +582,7 @@
       "rating": 4.9,
       "price": 499.99,
       "isPopular": false,
-      "isOutOfStock": true
+      "isInStock": false
     },
     {
       "id": "54",
@@ -593,7 +593,7 @@
       "rating": 4.6,
       "price": 249.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "55",
@@ -604,7 +604,7 @@
       "rating": 4.9,
       "price": 2499.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "56",
@@ -615,7 +615,7 @@
       "rating": 4.7,
       "price": 299.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "57",
@@ -626,7 +626,7 @@
       "rating": 4.8,
       "price": 399.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "58",
@@ -637,7 +637,7 @@
       "rating": 4.7,
       "price": 199.99,
       "isPopular": true,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "59",
@@ -648,7 +648,7 @@
       "rating": 4.4,
       "price": 29.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     },
     {
       "id": "60",
@@ -659,9 +659,10 @@
       "rating": 4.5,
       "price": 299.99,
       "isPopular": false,
-      "isOutOfStock": false
+      "isInStock": true
     }
   ],
+
   "cart": [
     {
       "id": "2",
