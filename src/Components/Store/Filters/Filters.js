@@ -21,19 +21,19 @@ function Filters({filters, onFilterChange, onClear, filterResults}) {
             }
             else if (key === "order") {
                 if (value === "Name: A-Z") {
-                    newFilter.fun = items.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
+                    newFilter.fun = function(products) {return products.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()))};
                 }
                 else if (value === "Name: Z-A") {
-                    newFilter = items.sort((a, b) => b.name.toLowerCase().localeCompare(a.name.toLowerCase()));
+                    newFilter = function(products) {return products.sort((a, b) => b.name.toLowerCase().localeCompare(a.name.toLowerCase()))};
                 }
                 else if (value === "Price: Low-High") {
-                    newFilter.fun = numbers.sort((a, b) => a.price - b.price);
+                    newFilter.fun = function(products) {return products.sort((a, b) => a.price - b.price)};
                 }
                 else if (value === "Price: High-Low") {
-                    newFilter.fun = numbers.sort((a, b) => b.price - a.price);
+                    newFilter.fun = function(products) {return products.sort((a, b) => b.price - a.price)};
                 }
                 else if (value === "Rating: High-Low") {
-                    newFilter.fun = numbers.sort((a, b) => b.rating - a.rating);
+                    newFilter.fun = function(products) {return products.sort((a, b) => b.rating - a.rating)};
                 }
             }
             else if (key === "search") {
