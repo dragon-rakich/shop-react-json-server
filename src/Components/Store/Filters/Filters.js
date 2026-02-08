@@ -11,7 +11,7 @@ function Filters({filters, onFilterChange, onClear, filterResults}) {
         const newFilter = {value: value}
         if (typeof(handleFilterChange === "function")) {
             if (key === "category") {
-                newFilter.fun = function(category) {return (value ===  "all") ? true:(category === value)}
+                newFilter.fun = function(category) {return (value ===  "all") ? true:(category === value)} //probi this.value če bo frka
             }
             else if (key === "brand") {
                 newFilter.fun = function(brand) {return (value === "all") ? true:(brand === value)}
@@ -20,12 +20,26 @@ function Filters({filters, onFilterChange, onClear, filterResults}) {
                 newFilter.fun = function(price) {return (value === "all") ? true:(value[0] <= price && price <= value[1])}
             }
             else if (key === "order") {
-                
+                if (value === "Name: A-Z") {
+                    newFilter.fun = items.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
+                }
+                else if (value === "Name: Z-A") {
+                    newFilter = items.sort((a, b) => b.name.toLowerCase().localeCompare(a.name.toLowerCase()));
+                }
+                else if (value === "Price: Low-High") {
+                    newFilter.fun = numbers.sort((a, b) => a.price - b.price);
+                }
+                else if (value === "Price: High-Low") {
+                    newFilter.fun = numbers.sort((a, b) => b.price - a.price);
+                }
+                else if (value === "Rating: High-Low") {
+                    newFilter.fun = numbers.sort((a, b) => b.rating - a.rating);
+                }
             }
             else if (key === "search") {
                 newFilter.fun = function(product) {
                     if (value === "") {return true}
-
+                    return ((product.name).includes(value) || (product.brand).includes(value) || (product.description).includes(value) || (product.category).includes(value))
                 }
             }
             else if (key === "inStockOnly") {
@@ -134,7 +148,7 @@ function Filters({filters, onFilterChange, onClear, filterResults}) {
                     />
                     <Dropdown 
                         options={[
-                            {label: "Name: A-Z", value: "Name:A-Z"},
+                            {label: "Name: A-Z", value: "Name: A-Z"},
                             {label: "Name: Z-A", value: "Name: Z-A"},
                             {label: "Price: Low to High", value: "Price: Low-High"},
                             {label: "Price: High to Low", value: "Price: High-Low"},
