@@ -21,13 +21,15 @@ function Store() {
     const [page, setPage] = useState(1);
 
     const handleFilterChange = (key, value) => {
-        setFilters(prev => {return {...prev, [key]: value}})
+        setFilters(prev => {return {...prev, [key]: value}});
+        setPage(1);
     }
     const handleClearFilters = () => {setFilters(initialFilters)}
 
     let filteredProducts = false;
     let filterResults = 0;
     let numOfPages = 1;
+    let rangeOfShowing = false;
 
     if (products) {
         filteredProducts = products.filter((product) => {
@@ -42,7 +44,13 @@ function Store() {
 
         filteredProducts = filters.order.fun(filteredProducts);
         filterResults = filteredProducts.length;
-        numOfPages = Math.floor(filterResults/PRODUCTS_PER_PAGE) + 1;
+        numOfPages = Math.floor(filterResults/(PRODUCTS_PER_PAGE - 0.1)) + 1;
+        if (filterResults > 0) {
+            rangeOfShowing[0] = (page - 1)*PRODUCTS_PER_PAGE + 1;
+            rangeOfShowing[1] = rangeOfShowing[0] + (PRODUCTS_PER_PAGE - 1);
+            if (! filteredProducts[rangeOfShowing[1]]) {rangeOfShowing[1] = filteredProducts.length}
+        }
+
     }
 
 
