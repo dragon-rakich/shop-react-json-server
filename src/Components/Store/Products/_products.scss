@@ -1,0 +1,7 @@
+@use '../../../styles/variables';
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-block: 1.25em;
+}
