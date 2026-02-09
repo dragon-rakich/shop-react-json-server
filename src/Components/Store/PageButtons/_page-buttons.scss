@@ -1,0 +1,14 @@
+.page-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.75em;
+
+    .page-buttons__numbers {
+        display: flex;
+        align-items: center;
+
+        gap: 0.25em;
+    }
+}
