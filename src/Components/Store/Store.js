@@ -2,7 +2,7 @@ import './_store.scss';
 import {useState, useEffect} from 'react';
 
 import StoreHeading from './StoreHeading/StoreHeading';
-import Product from './Product/Product';
+import Filters from './Filters/Filters';
 
 const initialFilters = {
     search: {value: "", fun: function(product) {return true}},
@@ -13,10 +13,38 @@ const initialFilters = {
     inStockOnly: {value: false, fun: function(isInStock) {return true}}
 }
 
+const PRODUCTS_PER_PAGE = 12;
+
 function Store() {
     const [products, setProducts] = useState(false);
     const [filters, setFilters] = useState(initialFilters);
-    const [page, setPage] = useState(false);
+    const [page, setPage] = useState(1);
+
+    const handleFilterChange = (key, value) => {
+        setFilters(prev => {return {...prev, [key]: value}})
+    }
+    const handleClearFilters = () => {setFilters(initialFilters)}
+
+    let filteredProducts = false;
+    let filterResults = 0;
+    let numOfPages = 1;
+
+    if (products) {
+        filteredProducts = products.filter((product) => {
+            return  (
+                filters.search.fun(product) &&
+                filters.category.fun(product.category) && 
+                filters.brand.fun(product.brand) &&
+                filters.price.fun(product.price) &&
+                filters.inStockOnly.fun(product.isInStock)
+            )
+        })
+
+        filteredProducts = filters.order.fun(filteredProducts);
+        filterResults = filteredProducts.length;
+        numOfPages = Math.floor(filterResults/PRODUCTS_PER_PAGE) + 1;
+    }
+
 
     useEffect(() => {
         let timeoutId;
@@ -51,8 +79,12 @@ function Store() {
                 main="Discover Amazing Tech Products"
                 sub="Browse our collection of 60 premium tech products from top brands"
             />
-            {(!products) && <p>Loading Store Info...</p>}
-            
+            <Filters 
+                filters={filters}
+                onFilterChange={handleFilterChange}
+                onClearFilters={handleClearFilters}
+                filterResults={filterResults}
+            />
         </section>
     )
 }
