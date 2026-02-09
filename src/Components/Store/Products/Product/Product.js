@@ -1,6 +1,6 @@
 import './_product.scss';
 
-import Button from '../../Button/Button';
+import Button from '../../../Button/Button';
 
 function Product({product}, onBuy) {
     return (
