@@ -4,15 +4,20 @@
     font-size: 0.875em;
     line-height: 1.42em;
 
-    padding-inline: 2.25em;
+    width: 100%;
+    padding-inline: 2.5em;
     padding-block: 0.57em;
     background-color: variables.$grey-100;
 
-    background-image: url('../../../../assets/icons/arrow-down.png');
+    background-image: url('../../../../assets/icons/search.png');
     background-repeat: no-repeat;
-    background-position: 5% center;
+    background-position: 1% center;
+    background-size: 16px 16px;
 
     border-radius: 8px;
+
+    outline: none;
+    border: none;
 
     &::placeholder {
         color: variables.$grey-500;
