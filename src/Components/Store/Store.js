@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react';
 
 import StoreHeading from './StoreHeading/StoreHeading';
 import Filters from './Filters/Filters';
+import PageButtons from './PageButtons/PageButtons';
 
 const initialFilters = {
     search: {value: "", fun: function(product) {return true}},
@@ -25,6 +26,12 @@ function Store() {
         setPage(1);
     }
     const handleClearFilters = () => {setFilters(initialFilters)}
+
+    const handlePageChange = (pageNum) => {setPage(pageNum)}
+
+    const handleAddItem = (product) => {
+
+    }
 
     let filteredProducts = false;
     let filterResults = 0;
@@ -50,7 +57,6 @@ function Store() {
             rangeOfShowing[1] = rangeOfShowing[0] + (PRODUCTS_PER_PAGE - 1);
             if (! filteredProducts[rangeOfShowing[1]]) {rangeOfShowing[1] = filteredProducts.length}
         }
-
     }
 
 
@@ -93,6 +99,15 @@ function Store() {
                 onClearFilters={handleClearFilters}
                 filterResults={filterResults}
             />
+            {(numOfPages > 1) && 
+                <PageButtons 
+                    page={page}
+                    numOfPages={numOfPages} 
+                    onClick={handlePageChange}
+                />}
+            {(rangeOfShowing) && 
+                <p className='store__showing'>Showing {rangeOfShowing[0]} - {rangeOfShowing[1]} of {filterResults} products</p>
+            }
         </section>
     )
 }
