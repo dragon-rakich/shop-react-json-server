@@ -17,8 +17,8 @@
             gap: 10px;
 
             .filters__icon {
-                width: 20px;
-                height: 20px;
+                width: 1.25em;
+                height: 1.25em;
             }
 
             .filters__title {
@@ -37,10 +37,11 @@
     }
 
     .filters__grid {
+        display: grid;
         grid-template-columns: 1fr;
         gap: 16px;
 
-        margin-bottom: 1em;
+        padding-block: 1em;
     }
 
     .filters__last-row {
