@@ -3,7 +3,7 @@ import Product from './Product/Product';
 import Loading from './Loading/Loading';
 import NoResults from './NoResults/NoResults';
 
-function Products(products) {
+function Products(products, onAddItem) {
     if (!products) {
         return (
             <Loading 
@@ -20,11 +20,21 @@ function Products(products) {
                 subtitle="Try adjusting your search criteria"
             />
         )
-
     }
 
     return (
         <div className='products'>
+            <ul className='products__list'>
+                {products.map((product) => {
+                    return (
+                    <li key={product.id}>
+                        <Product 
+                            product={product}
+                            onAddItem={() => {onAddItem(product)}}
+                        />
+                    </li>)
+                })}
+            </ul>
         </div>
     )
 }
