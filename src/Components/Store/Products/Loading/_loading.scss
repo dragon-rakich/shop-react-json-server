@@ -1,0 +1,19 @@
+@use '../../../../styles/variables';
+
+.loading {
+    color: variables.$grey-500;
+
+    padding-block: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    .loading__title {
+        font-size: 1em;
+    }
+
+    .loading__subtitle {
+        font-size: 0.75em;
+    }
+}
