@@ -2,7 +2,7 @@ import './_product.scss';
 
 import Button from '../../../Button/Button';
 
-function Product({product}, onBuy) {
+function Product({product, onAddItem}) {
     return (
         <article className='product'>
             <div className='product__image' />
@@ -19,7 +19,7 @@ function Product({product}, onBuy) {
                     label="Add to Cart"
                     type="secondary"
                     size="large"
-                    onClick={onBuy}
+                    onClick={onAddItem}
                 />            
             </div>
         </article>
