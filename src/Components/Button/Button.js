@@ -2,7 +2,8 @@ import React from "react";
 import './_btn.scss';
 
 function Button({label, type, size, onClick, isSubmit, isDisabled}) {
-    let className = "btn" + " btn--" + type + " btn--" + size;    
+    let className = "btn" + " btn--" + type + " btn--" + size;
+    if (isDisabled) {className += " btn--disabled"}
 
     const handleClick = (e) => {
         console.log("Button click");
