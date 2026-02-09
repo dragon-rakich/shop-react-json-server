@@ -5,7 +5,9 @@ import Dropdown from './Dropdown/Dropdown';
 import Checkbox from './Checkbox/Checkbox';
 import Button from '../../Button/Button';
 
-function Filters({filters, onFilterChange, onClear, filterResults}) {
+const logo = new URL('../../../assets/icons/filter.png', import.meta.url);
+
+function Filters({filters, onFilterChange, onClearFilters, filterResults}) {
 
     const handleFilterChange = (key, value) => {
         const newFilter = {value: value}
@@ -24,7 +26,7 @@ function Filters({filters, onFilterChange, onClear, filterResults}) {
                     newFilter.fun = function(products) {return products.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()))};
                 }
                 else if (value === "Name: Z-A") {
-                    newFilter = function(products) {return products.sort((a, b) => b.name.toLowerCase().localeCompare(a.name.toLowerCase()))};
+                    newFilter.fun = function(products) {return products.sort((a, b) => b.name.toLowerCase().localeCompare(a.name.toLowerCase()))};
                 }
                 else if (value === "Price: Low-High") {
                     newFilter.fun = function(products) {return products.sort((a, b) => a.price - b.price)};
@@ -50,16 +52,16 @@ function Filters({filters, onFilterChange, onClear, filterResults}) {
         onFilterChange(key, newFilter);
     }
 
-    const handleClear = (e) => {
-        if (typeof(onClear) === "function") {
-            onClear();
+    const handleClearFilters = (e) => {
+        if (typeof(onClearFilters) === "function") {
+            onClearFilters();
         }
     }
     return (
         <div className='filters'>
             <header className='filters__header'>
                 <div className='filters__heading'>
-                    <img className='filters__icon' src='../../../assets/icons/search.png' />
+                    <img className='filters__icon' alt='filters icon' src={logo} />
                     <h2 className='filters__title'>Filters</h2>
                 </div>
                 <p className='filters__results'>{filterResults} products found</p>
@@ -71,7 +73,7 @@ function Filters({filters, onFilterChange, onClear, filterResults}) {
                         type="text"
                         value={filters.search.value}
                         placeholder="Search products"
-
+                        onChange={(value) => {handleFilterChange("search", value)}}
                     />
                     <Dropdown 
                         options={[
@@ -162,14 +164,14 @@ function Filters({filters, onFilterChange, onClear, filterResults}) {
                 <div className='filters__last-row'>
                         <Checkbox 
                             label="In Stock Only"
-                            checked={filters.inStockOnly.checked}
+                            checked={filters.inStockOnly.value}
                             onChange={(checked) => {handleFilterChange("inStockOnly", checked)}}
                         />
                         <Button 
                             label="Clear Filters"
                             type="primary"
                             size="medium"
-                            onClick={handleClear}
+                            onClick={handleClearFilters}
                         />
                 </div>
             </main>
