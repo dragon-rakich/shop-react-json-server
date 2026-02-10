@@ -12,7 +12,7 @@ function CartPanel({cart, isShowing, onHide, onUpdate}) {
         <div className={className}>
             <header className='cart-panel__header'>
                 <h2 className='cart-panel__title'>Shopping Cart</h2>
-                <button className='cart-panel__x' onClick={onHide}>x</button>
+                <button className='cart-panel__x' onClick={onHide}>×</button>
             </header>
             {(cart.length === 0) && 
                 <p className='cart-panel__empty'>Your cart is empty.</p>

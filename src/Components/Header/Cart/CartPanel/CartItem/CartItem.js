@@ -27,7 +27,7 @@ function CartItem({cartItem, onDecrease, onIncrease, onRemove}) {
                     </div>
                 </div>
             </div>
-            <button onClick={onRemove}>X</button>
+            <button onClick={onRemove}>×</button>
         </article>
     )
 }
