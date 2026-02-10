@@ -12,16 +12,18 @@ function PageButtons({numOfPages, page, onClick}) {
                 onClick={() => {onClick(page - 1)}}
                 isDisabled={(page === 1) ? true:false}
             />
-            <div className='page-buttons__numbers'>
-                {Array.from({ length: numOfPages }, (_, i) => i + 1).map((num) => 
-                    <Button
-                        label={num}
-                        type={(num !== page) ? "primary":"secondary"}
-                        size="medium"
-                        onClick={() => {onClick(num)}}
-                    />
+            <ul className='page-buttons__numbers'>
+                {Array.from({ length: numOfPages }, (_, i) => i + 1).map((num, i) => 
+                    <li key={i}>
+                        <Button
+                            label={num}
+                            type={(num !== page) ? "primary":"secondary"}
+                            size="medium"
+                            onClick={() => {onClick(num)}}
+                        />
+                    </li>
                 )}
-            </div>
+            </ul>
             <Button 
                 label=" > "
                 type="primary"
