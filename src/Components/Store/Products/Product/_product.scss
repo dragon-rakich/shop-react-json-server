@@ -7,7 +7,7 @@
 
     .product__image {
         width: 100%;
-        height: 12em;
+        height: 12.25em;
 
         margin-bottom: 2.5em;
 
@@ -29,11 +29,11 @@
             line-height: 1.375em;
             font-weight: 600;
 
-            margin-bottom: 0.5em;
+            margin-bottom: 0.6em;
         }
 
         .product__line {
-            font-size: 0.75em;
+            font-size: 0.7em;
             line-height: 1.33em;
             font-weight: 400;
 
@@ -45,12 +45,14 @@
         .product__rating-box {
             display: flex;
             align-items: center;
+            gap: 0.25em;
 
-            margin-bottom: 0.66em;
+            margin-top: 0.75em;
+            margin-bottom: 0.75em;
 
             .product__rating-star {
-                width: 1em;
-                height: 1em;
+                width: 0.95em;
+                height: 0.95em;
 
                 background-image: url('../../../../assets/icons/star.png');
                 background-repeat: no-repeat;
@@ -59,13 +61,13 @@
             }
 
             .product__rating-num {
-                font-size: 0.75em;
+                font-size: 0.9em;
                 font-weight: 500;
             }
         }
 
         .product__price {
-            font-size: 1.375em;
+            font-size: 1.25em;
             font-weight: 700;
             line-height: 1.45em;
 
