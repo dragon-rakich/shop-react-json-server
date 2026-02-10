@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react';
 
 import StoreHeading from './StoreHeading/StoreHeading';
 import Filters from './Filters/Filters';
+import Products from './Products/Products';
 import PageButtons from './PageButtons/PageButtons';
 
 const initialFilters = {
@@ -10,7 +11,7 @@ const initialFilters = {
     category: {value: "all", fun: function(category) {return true}},
     brand: {value: "all", fun: function(brand) {return true}},
     price: {value: "all", fun: function(price) {return true}},
-    order: {value: "Name: A-Z", fun: function(products) {products.sort((a, b) => {a.name.toLowerCase().localeCompare(b.name.toLowerCase())})}}, 
+    order: {value: "Name: A-Z", fun: function(products) {return products.sort((a, b) => {a.name.toLowerCase().localeCompare(b.name.toLowerCase())})}}, 
     inStockOnly: {value: false, fun: function(isInStock) {return true}}
 }
 
@@ -25,7 +26,7 @@ function Store() {
         setFilters(prev => {return {...prev, [key]: value}});
         setPage(1);
     }
-    const handleClearFilters = () => {setFilters(initialFilters)}
+    const handleClearFilters = () => {setFilters(initialFilters); setPage(1)}
 
     const handlePageChange = (pageNum) => {setPage(pageNum)}
 
@@ -51,14 +52,15 @@ function Store() {
 
         filteredProducts = filters.order.fun(filteredProducts);
         filterResults = filteredProducts.length;
-        numOfPages = Math.floor(filterResults/(PRODUCTS_PER_PAGE - 0.1)) + 1;
+        numOfPages = Math.floor(filterResults/(PRODUCTS_PER_PAGE + 1) + 1);
+
         if (filterResults > 0) {
-            rangeOfShowing[0] = (page - 1)*PRODUCTS_PER_PAGE + 1;
+            rangeOfShowing = [];
+            rangeOfShowing[0] = (page - 1)*PRODUCTS_PER_PAGE;
             rangeOfShowing[1] = rangeOfShowing[0] + (PRODUCTS_PER_PAGE - 1);
-            if (! filteredProducts[rangeOfShowing[1]]) {rangeOfShowing[1] = filteredProducts.length}
+            if (! filteredProducts[rangeOfShowing[1]]) {rangeOfShowing[1] = filteredProducts.length - 1}
         }
     }
-
 
     useEffect(() => {
         let timeoutId;
@@ -77,16 +79,15 @@ function Store() {
             } catch(err) {
                 console.log(err);
                 timeoutId = setTimeout(fetchProducts, 3000);
-        }
+            } 
+        };
+
         fetchProducts();
 
         return () => {
             if (timeoutId) {clearTimeout(timeoutId)};
         };
-
-    }
-
-    }, [])
+    }, []);
     return (
         <section className='store container'>
             <StoreHeading 
@@ -99,6 +100,13 @@ function Store() {
                 onClearFilters={handleClearFilters}
                 filterResults={filterResults}
             />
+            <Products
+                products={(filteredProducts) ? filteredProducts.filter((product, i) => {
+                    return (rangeOfShowing[0] <= i && i <= rangeOfShowing[1])})
+                    :false
+                }
+                onAddItem={handleAddItem}
+            />
             {(numOfPages > 1) && 
                 <PageButtons 
                     page={page}
@@ -106,7 +114,7 @@ function Store() {
                     onClick={handlePageChange}
                 />}
             {(rangeOfShowing) && 
-                <p className='store__showing'>Showing {rangeOfShowing[0]} - {rangeOfShowing[1]} of {filterResults} products</p>
+                <p className='store__showing'>Showing {rangeOfShowing[0] + 1} - {rangeOfShowing[1] + 1} of {filterResults} products</p>
             }
         </section>
     )
