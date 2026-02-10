@@ -118,6 +118,8 @@ function Filters({filters, onFilterChange, onClearFilters, filterResults}) {
                             {label: "Fujifilm", value: "Fujifilm"},
                             {label: "Garmin", value: "Garmin"},
                             {label: "GoPro", value: "GoPro"},
+                            {label: "HP", value: "HP"},
+                            {label: "JBL", value: "JBL"},
                             {label: "Keychron", value: "Keychron"},
                             {label: "LG", value: "LG"},
                             {label: "Lenovo", value: "Lenovo"},
@@ -139,7 +141,7 @@ function Filters({filters, onFilterChange, onClearFilters, filterResults}) {
                     <Dropdown 
                         options={[
                             {label: "All Prices", value: "all"},
-                            {label: "Under $100", value: [0, 99]},
+                            {label: "Under $100", value: [0, 99.999]},
                             {label: "$100 - $300", value: [100, 300]},
                             {label: "$300 - $500", value: [300, 500]},
                             {label: "$500 - $1000", value: [500, 1000]},
