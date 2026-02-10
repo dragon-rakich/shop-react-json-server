@@ -220,7 +220,6 @@
       "isPopular": false,
       "isInStock": true
     },
-
     {
       "id": "21",
       "name": "Dell XPS 15",
@@ -662,19 +661,24 @@
       "isInStock": true
     }
   ],
-
   "cart": [
     {
-      "id": "2",
-      "title": "Headphones",
-      "price": 70.99,
-      "count": 12
+      "id": "b700",
+      "title": "Apple Magic Keyboard",
+      "count": 1,
+      "price": 99.99
     },
     {
-      "id": "3",
-      "title": "Mouse",
-      "price": 26.99,
-      "count": 12
+      "id": "afef",
+      "title": "BenQ PD2700U",
+      "count": 2,
+      "price": 449.99
+    },
+    {
+      "id": "6820",
+      "title": "Canon EOS R9 Mark II",
+      "count": 2,
+      "price": 2499.99
     }
   ]
 }
