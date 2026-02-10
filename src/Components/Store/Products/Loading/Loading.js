@@ -1,6 +1,6 @@
 import './_loading.scss';
 
-function Loading(title, subtitle) {
+function Loading({title, subtitle}) {
     return (
         <div className='loading'>
             <p className='loading__title'>{title}</p>

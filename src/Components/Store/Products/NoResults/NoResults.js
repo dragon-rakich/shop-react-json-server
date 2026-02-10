@@ -1,9 +1,9 @@
 import './_no-results.scss';
 
-function NoResults(title, subtitle) {
+function NoResults({title, subtitle}) {
     return (
         <div className='no-results'>
-            <p className='resulrs__title'>{title}</p>
+            <p className='results__title'>{title}</p>
             <p className='results__subtitle'>{subtitle}</p>
         </div>
     )
