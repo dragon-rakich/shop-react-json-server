@@ -6,7 +6,7 @@
     border-top-right-radius: 14px;
 
     .product__image {
-        width: 21.375em;
+        width: 100%;
         height: 12em;
 
         margin-bottom: 2.5em;
@@ -28,6 +28,8 @@
             font-size: 1em;
             line-height: 1.375em;
             font-weight: 600;
+
+            margin-bottom: 0.5em;
         }
 
         .product__line {
@@ -36,11 +38,15 @@
             font-weight: 400;
 
             color: variables.$grey-500;
+
+            margin-bottom: 0.66em;
         }
 
         .product__rating-box {
             display: flex;
             align-items: center;
+
+            margin-bottom: 0.66em;
 
             .product__rating-star {
                 width: 1em;
