@@ -30,7 +30,38 @@ function Store() {
 
     const handlePageChange = (pageNum) => {setPage(pageNum)}
 
-    const handleAddItem = (product) => {
+    const handleAddItem = async(product) => {
+        let API = "http://localhost:3000/cart";
+        try {
+            const resp = await fetch(API);
+            if (!resp.ok) {
+                console.log("get products error: " + resp.status);
+                return;
+            }
+            const cart = await resp.json();
+
+            let cartItem;
+            let method = "";
+            if (cart.some(cartItem => cartItem.title === product.name)) {
+                cartItem = cart.find(cartItem => cartItem.title === product.name);
+                cartItem.count++;
+                API += "/" + cartItem.id
+                method = "PUT";
+            }
+            else {
+                cartItem = {title: product.name, count: 1, price: product.price};
+                method = "POST";
+            }
+
+            await fetch(API, {
+                method: method,
+                body: JSON.stringify(cartItem),
+                headers: {"Content-Type": "aplication/json"}
+            });
+
+        } catch(err) {
+            console.log(err);
+        } 
 
     }
 
