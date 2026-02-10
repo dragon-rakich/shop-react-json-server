@@ -3,17 +3,16 @@ import Product from './Product/Product';
 import Loading from './Loading/Loading';
 import NoResults from './NoResults/NoResults';
 
-function Products(products, onAddItem) {
+function Products({products, onAddItem}) {
     if (!products) {
         return (
             <Loading 
-                title="Products Loading......."
-                subtitle="Please Check Internet Connection"
+                title="Products loading......."
+                subtitle="Please check internet connection"
             />
         )
     }
-
-    if (products.length > 0) {
+    if (products.length === 0) {
         return (
             <NoResults 
                 title="No products found matching your filters"
