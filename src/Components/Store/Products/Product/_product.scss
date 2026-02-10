@@ -1,4 +1,4 @@
-@use '../../../styles/variables';
+@use '../../../../styles/variables';
 
 .product {
     border: 1px solid variables.$black-100;
@@ -14,7 +14,7 @@
         border-top-left-radius: 14px;
         border-top-right-radius: 14px;
 
-        background-image: url('../../../assets/product-bg.jpg');
+        background-image: url('../../../../assets/product-bg.jpg');
         background-size: cover;
         background-position: center center;
 
@@ -46,7 +46,7 @@
                 width: 1em;
                 height: 1em;
 
-                background-image: url('../../../assets/icons/star.png');
+                background-image: url('../../../../assets/icons/star.png');
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: contain;
