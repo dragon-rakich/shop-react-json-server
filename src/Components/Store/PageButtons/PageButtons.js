@@ -6,7 +6,7 @@ function PageButtons({numOfPages, page, onClick}) {
     return (
         <div className='page-buttons'>
             <Button 
-                label=" < "
+                label=" ‹ "
                 type="primary"
                 size="medium"
                 onClick={() => {onClick(page - 1)}}
@@ -25,7 +25,7 @@ function PageButtons({numOfPages, page, onClick}) {
                 )}
             </ul>
             <Button 
-                label=" > "
+                label=" › "
                 type="primary"
                 size="medium"
                 onClick={() => {onClick(page + 1)}}
