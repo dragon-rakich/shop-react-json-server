@@ -1,5 +1,11 @@
 @use '../../styles/variables';
 
 .store {
-    
+    padding-bottom: 4.25em;
+    .store__showing {
+        font-size: 0.8125em;
+        font-weight: 400;
+        color: variables.$grey-500;
+        text-align: center;
+    }
 }
