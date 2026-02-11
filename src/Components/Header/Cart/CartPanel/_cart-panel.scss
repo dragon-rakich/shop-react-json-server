@@ -18,6 +18,8 @@
 
     transition: left 0.45s ease 0.15s;
 
+    pointer-events: none;
+
     .cart-panel__header {
         display: flex;
         justify-content: space-between;
@@ -59,5 +61,5 @@
 }
 
 .open {
-    left: -10px;
+    left: 0vw;
 }
