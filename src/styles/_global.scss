@@ -1,8 +1,26 @@
 @use 'variables';
+@use 'mixins';
 
 .container {
     margin: 0 auto;
     width: 95%;
+
+    @include mixins.tablet-portrait-styles() {
+        width: 720px;
+    }
+
+    @include mixins.tablet-landscape-styles() {
+        width: 990px;
+    }
+
+    @include mixins.desktop-styles() {
+        width: 1280px;
+    }
+
+    @include mixins.desktop-large-styles() {
+        width: 1536px;
+    }
+
 }
 
 body {
@@ -12,6 +30,15 @@ body {
 
 html {
     font-size: 100%;
+
+    @include mixins.tablet-portrait-styles() {
+        font-size: 106.25%;
+    }
+
+    @include mixins.desktop-large-styles() {
+        font-size: 112.5%;
+    }
+
 }
 
 button {

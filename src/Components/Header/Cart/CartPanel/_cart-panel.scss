@@ -1,14 +1,15 @@
 @use '../../../../styles/variables';
+@use '../../../../styles/mixins';
 
 .cart-panel {
     position: fixed;
     z-index: 11;
 
-    width:100vw;
+    width: 100vw;
     height: 100vh;
 
     top: 0;
-    left: 110vw;
+    left: 150vw;
 
     background-color: variables.$white;
 
@@ -19,6 +20,24 @@
     transition: left 0.45s ease 0.15s;
 
     overflow-y: auto;
+
+    @include mixins.tablet-portrait-styles() {
+        width: 66vw;
+    }
+
+    @include mixins.tablet-landscape-styles() {
+        width: 50vw;
+    }
+
+    @include mixins.desktop-styles() {
+        width: 40vw;
+    }
+
+    @include mixins.desktop-large-styles() {
+        width: 30vw;
+    }
+
+
     .cart-panel__header {
         display: flex;
         justify-content: space-between;
@@ -61,4 +80,22 @@
 
 .open {
     left: 0vw;
+
+    @include mixins.tablet-portrait-styles() {
+        left: 33vw;
+    }
+
+    @include mixins.tablet-landscape-styles() {
+        left: 50vw;
+    }
+
+    @include mixins.desktop-styles() {
+        left: 60vw;
+    }
+
+    @include mixins.desktop-large-styles() {
+        left: 70vw;
+    }
+
+
 }
