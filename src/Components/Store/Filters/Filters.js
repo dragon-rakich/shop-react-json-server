@@ -41,7 +41,7 @@ function Filters({filters, onFilterChange, onClearFilters, filterResults}) {
             else if (key === "search") {
                 newFilter.fun = function(product) {
                     if (value === "") {return true}
-                    return ((product.name).includes(value) || (product.brand).includes(value) || (product.description).includes(value) || (product.category).includes(value))
+                    return ((product.name.toLowerCase()).includes(value.toLowerCase()) || (product.brand.toLowerCase()).includes(value.toLowerCase()) || (product.description.toLowerCase()).includes(value.toLowerCase()) || (product.category.toLowerCase()).includes(value.toLowerCase()))
                 }
             }
             else if (key === "inStockOnly") {
