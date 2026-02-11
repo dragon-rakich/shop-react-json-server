@@ -119,6 +119,11 @@ function Store() {
             if (timeoutId) {clearTimeout(timeoutId)};
         };
     }, []);
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [page]);
+
     return (
         <section className='store container'>
             <StoreHeading 
