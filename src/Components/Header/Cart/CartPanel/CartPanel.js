@@ -2,6 +2,7 @@ import Cart from '../Cart';
 import './_cart-panel.scss';
 
 import CartItem from './CartItem/CartItem';
+import Button from '../../../Button/Button';
 
 function CartPanel({cart, isShowing, onHide, onUpdate}) {
     const total = cart.reduce((sum, cartItem) => sum + (Number(cartItem.price) * Number(cartItem.count)), 0);
@@ -35,7 +36,12 @@ function CartPanel({cart, isShowing, onHide, onUpdate}) {
                         <p className='cart-panel__total-text'>Total:</p>
                         <p className='cart-panel__total-amount'>${total.toFixed(2)}</p>
                     </div>
-                    <button>Checkout</button>
+                    <Button
+                        label="Checkout"
+                        type="secondary"
+                        size="large"
+                        onClick={() => {}}
+                    />            
                 </>
             }
 
