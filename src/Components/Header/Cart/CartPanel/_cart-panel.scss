@@ -18,8 +18,7 @@
 
     transition: left 0.45s ease 0.15s;
 
-    pointer-events: none;
-
+    overflow-y: auto;
     .cart-panel__header {
         display: flex;
         justify-content: space-between;
