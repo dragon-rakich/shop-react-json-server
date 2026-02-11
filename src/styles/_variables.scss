@@ -15,3 +15,8 @@ $grey-100: #F3F3F5;
 
 $white: #ffffff;
 
+//breakpoints(mobile is default)
+$tablet-portrait-bp: "only screen and (min-width: 752px)";
+$tablet-landscape-bp: "only screen and (min-width: 1008px)";
+$desktop-bp: "only screen and (min-width: 1424px)";
+$desktop-large-bp: "only screen and (min-width: 1920px)";
