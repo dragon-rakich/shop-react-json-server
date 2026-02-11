@@ -715,6 +715,12 @@
       "title": "MacBook Pro 14",
       "count": 3,
       "price": 1999.99
+    },
+    {
+      "id": "c2d0",
+      "title": "ASUS ProArt PA278QV",
+      "count": 1,
+      "price": 349.99
     }
   ]
 }
