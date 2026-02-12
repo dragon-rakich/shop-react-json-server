@@ -1,6 +1,6 @@
 # 🛍️ Shop React JSON Server
 
-*Created as part of the **Coders Lab JavaScript Boitcamp** final project.*
+*Created as part of the **Coders Lab JavaScript Bootcamp** final project.*
 
 A simple **tech e-commerce shop** built with **React**, **Parcel**, and **Sass**, using **JSON Server** as a mock backend API.  
 This project was created to demonstrate front-end development, API integration, responsive design, and UI interactivity skills.
