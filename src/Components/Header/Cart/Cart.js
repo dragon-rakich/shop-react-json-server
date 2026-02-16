@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 import CartButton from './CartButton/CartButton';
 import CartCount from './CartCount/CartCount';
-import CartOverlay from './CartOverlay/CartOverlay';
+import Overlay from '../../Overlay/Overlay';
 import CartPanel from './CartPanel/CartPanel';
 
 function Cart() {
@@ -54,14 +54,11 @@ function Cart() {
         };
     }, []); 
 
-
-
-
     return (
         <div className='cart'>
             <CartButton onClick={toggleCart} />
             {(cart && cart.length > 0) && <CartCount cart={cart} />}
-            {(isShowing) && <CartOverlay onClick={toggleCart} />}
+            {(isShowing) && <Overlay onClick={toggleCart} opacity={0.5} />}
             <CartPanel 
                 cart={cart} 
                 isShowing={isShowing}

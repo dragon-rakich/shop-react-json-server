@@ -1,14 +1,13 @@
-@use '../../../../styles/variables';
+@use '../../styles/variables';
 
-.cart-overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 10;
-
-  background-color: variables.$black-200;
+  background-color: variables.$black-900;
 
   pointer-events: auto;
 }
