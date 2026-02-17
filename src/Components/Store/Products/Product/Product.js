@@ -22,7 +22,14 @@ function Product({product, onAddItem}) {
     const style = { backgroundImage: 'url(' + urls[product.category.toLowerCase()] + ')' };
     return (
         <article className='product'>
-            <div className='product__image' style={style}> </div>
+            <div className='product__image' style={style}>
+                {(product.isPopular) &&
+                    <p className='product__tag product__tag--popular'>Popular</p>
+                }
+                {(!product.isInStock) &&
+                    <p className='product__tag product__tag--out-of-stock'>Out of Stock</p>
+                }
+            </div>
             <div className='product__ui'>
                 <h2 className='product__name' >{product.name}</h2>
                 <p className='product__line'>{product.description}</p>
@@ -34,8 +41,9 @@ function Product({product, onAddItem}) {
                 <p className='product__price'>${product.price}</p>
                 <Button
                     label="Add to Cart"
-                    type="secondary"
+                    type={(product.isInStock) ? "secondary":"disabled"}
                     size="large"
+                    isDisabled={(!product.isInStock) ? true:false}
                     onClick={onAddItem}
                 />            
             </div>

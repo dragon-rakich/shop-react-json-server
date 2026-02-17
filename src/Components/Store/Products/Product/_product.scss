@@ -18,6 +18,29 @@
         background-size: cover;
         background-position: center center;
 
+        position: relative;
+
+            .product__tag {
+                font-size: 0.75em;
+                color: variables.$white;
+                line-height: 1.33em;
+                padding-block: 0.16em;
+                padding-inline: 0.66em;
+
+                border-radius: 8px;
+                
+                position: absolute;
+                top: 0.66em;
+                right: 0.66em;
+            }
+            .product__tag--popular {
+                background-color: variables.$black-800;
+            }
+
+            .product__tag--out-of-stock {
+                background-color: variables.$red;
+            }
+
         @include mixins.tablet-landscape-styles() {
             height: 14.5em;
         }
