@@ -7,7 +7,7 @@ function PageButtons({numOfPages, page, onClick}) {
         <div className='page-buttons'>
             <Button 
                 label=" ‹ "
-                type="primary"
+                type={(page !== 1) ? "primary":"adjacent"}
                 size="medium"
                 onClick={() => {onClick(page - 1)}}
                 isDisabled={(page === 1) ? true:false}

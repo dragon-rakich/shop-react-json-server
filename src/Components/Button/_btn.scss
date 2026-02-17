@@ -19,6 +19,12 @@
 }
 
 .btn--disabled {
+    color: variables.$white;
+    background-color: variables.$grey-500;
+}
+
+.btn--adjacent {
+    border: 1px solid variables.$black-100;
     color: variables.$grey-500;
 }
 
