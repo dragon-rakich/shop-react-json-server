@@ -1,0 +1,8 @@
+@use '../../../../styles/variables';
+
+.footer-item {
+    font-size: 0.8125em;
+    line-height: 1.5384615384615385em;
+    font-weight: 400;
+    color: variables.$grey-500;
+}
