@@ -10,15 +10,57 @@ function Footer() {
                 <div className='container'>
                     <FooterColumn
                         title="About TechStore"
-                        items={["Your one-stop shop for the latest tech products from top brands worldwide."]}
+                        items={[
+                            {
+                                content: "Your one-stop shop for the latest tech products from top brands worldwide."
+                            }
+                        ]}
                     />
                     <FooterColumn 
                         title="Customer Service"
-                        items={["Contact Us", "Shipping & Returns", "FAQ"]}
+                        items={[
+                            {
+                                content: "Contact Us",
+                                isLink: true,
+                                typeOfLink: "internal",
+                                href: "/contact"
+                            }, 
+                            {
+                                content: "Shipping & Returns",
+                                isLink: true,
+                                typeOfLink: "internal",
+                                href: "/shipping"
+                            },
+                            {
+                                content: "FAQ",
+                                isLink: true,
+                                typeOfLink: "internal",
+                                href: "/faq"
+                            }
+                        ]}
                     />
                     <FooterColumn
                         title="Follow Us"
-                        items={["Facebook", "Twitter", "Instagram"]}
+                        items={[
+                            {
+                                content: "Facebook",
+                                isLink: true,
+                                typeOfLink: "external",
+                                href: "https://www.facebook.com/"
+                            }, 
+                            {
+                                content: "Twitter",
+                                isLink: true,
+                                typeOfLink: "external",
+                                href: "https://www.twitter.com/"
+                            },
+                            {
+                                content: "Instagram",
+                                isLink: true,
+                                typeOfLink: "external",
+                                href: "https://www.instagram.com/"
+                            }
+                        ]}
                     />
                 </div>
             </div>
