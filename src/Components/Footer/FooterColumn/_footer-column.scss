@@ -1,6 +1,7 @@
 @use '../../../styles/variables';
 
 .footer-column {
+    
     .footer-column__title {
         font-size: 1em;
         line-height: 1.6875em;
@@ -12,12 +13,5 @@
         display: flex;
         flex-direction: column;
         gap: 8px
-    }
-
-    .footer-column__item {
-        font-size: 0.8125em;
-        line-height: 1.5384615384615385em;
-        font-weight: 400;
-        color: variables.$grey-500;
     }
 }
