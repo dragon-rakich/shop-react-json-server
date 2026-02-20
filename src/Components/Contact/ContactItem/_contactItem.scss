@@ -1,0 +1,23 @@
+@use '../../../styles/variables';
+
+.contact-item {
+    display: flex;
+    gap: 1.5em;
+
+    margin-bottom: 1em;
+
+    .contact-item__data {
+
+        .contact-item__title {
+            font-size: 1.1875em;
+            font-weight: 600;
+            line-height: 1.5789473684210527em;
+        }
+
+        .contact-item__data-item {
+            font-size: 0.875em;
+            line-height: 1.7142857142857142em;
+            color: variables.$grey-500;
+        }
+    }
+}
