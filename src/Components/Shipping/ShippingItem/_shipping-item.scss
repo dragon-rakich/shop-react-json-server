@@ -1,0 +1,46 @@
+@use '../../../styles/variables';
+
+.shipping-item {
+    display: flex;
+    gap: 1.5em;
+    align-items: flex-start;
+
+    margin-bottom: 1.75em;
+
+    .shipping-item__icon {
+
+    }
+
+    .shipping-item__data {
+
+        .shipping-item__title {
+            font-size: 1.1875em;
+            font-weight: 600;
+
+            margin-bottom: 0.5em;
+        }
+
+        .shipping-item__description {
+            font-size: 0.9125em;
+            font-weight: 400;
+            line-height: 1.7142857142857142em;
+            color: variables.$grey-500;
+
+            margin-bottom: 0.5em;
+        }
+
+        .shipping-item__list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25em;
+
+            .shipping-item__list-item {
+                font-size: 0.75em;
+                font-weight: 400;
+                line-height: 1.7142857142857142em;
+                color: variables.$grey-500;
+            }
+        }
+        
+    }
+}
