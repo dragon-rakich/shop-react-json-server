@@ -1,8 +1,4 @@
-import {
-  Link
-}
-from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 import './_footer-item.scss';
 
