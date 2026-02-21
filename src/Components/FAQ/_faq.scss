@@ -1,0 +1,36 @@
+@use '../../styles/variables';
+
+.faq {
+    padding-top: 2em;
+    padding-bottom: 5em;
+
+    .faq__title {
+        font-size: 1.75em;
+        line-height: 1.2857142857142858em;
+        font-weight: 700;
+
+        margin-bottom: 1.5em;
+    }
+
+    .faq__items {
+        .faq__item {
+            padding-block: 1em;
+
+            border-top: 1px solid variables.$black-100;
+            border-bottom: 1px solid variables.$black-100;
+            &:first-child {border-top: none;}
+            &:last-child {border-bottom: none;}
+
+            .faq__question {
+                font-size: 0.8125em;
+                font-weight: 700;
+                margin-bottom: 1.25em;
+            }
+
+            .faq__answer {
+                font-size: 0.75em;
+                font-weight: 400;
+            }
+        }
+    }
+}
