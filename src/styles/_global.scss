@@ -45,3 +45,9 @@ button {
     background: none;
     border: none;
 }
+
+.contact, .shipping, .faq {
+    @include mixins.tablet-portrait-styles {
+        max-width: 672px;
+    }
+}
